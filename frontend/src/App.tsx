@@ -13,7 +13,7 @@ import KeyFrameCreation from './pages/KeyFrameCreation'
 import SceneBuilder from './pages/SceneBuilder'
 import ApprovedStoryboard from './pages/ApprovedStoryboard'
 import VideoKeyFrames from './pages/VideoKeyFrames'
-import { useAppContext } from './contexts/AppContext'
+import { useApp } from './contexts/AppContext'
 import {
   Home,
   Sparkles,
@@ -25,7 +25,7 @@ import {
 } from 'lucide-react'
 
 function App() {
-  const { state } = useAppContext()
+  const { state } = useApp()
   
   // State to track which modules are expanded
   const [expandedModules, setExpandedModules] = useState({
