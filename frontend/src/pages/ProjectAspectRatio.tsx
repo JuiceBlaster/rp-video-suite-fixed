@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { AspectRatio, Check } from 'lucide-react'
+import { CheckCircle } from 'lucide-react'
 
 // Define common aspect ratios
 const aspectRatios = [
@@ -32,7 +32,7 @@ const ProjectAspectRatio = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <AspectRatio className="h-5 w-5" />
+            <span className="text-lg">⊡</span>
             Project Aspect Ratio
           </CardTitle>
           <CardDescription>
@@ -50,7 +50,7 @@ const ProjectAspectRatio = () => {
               >
                 {selectedRatio.id === ratio.id && (
                   <div className="absolute top-2 right-2">
-                    <Check className="h-4 w-4" />
+                    <CheckCircle className="h-4 w-4" />
                   </div>
                 )}
                 <div 

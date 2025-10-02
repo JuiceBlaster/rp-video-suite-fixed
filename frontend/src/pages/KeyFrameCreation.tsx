@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Crop, Image, Plus, Sparkles, Check } from 'lucide-react'
+import { CheckCircle, Image, Plus, Sparkles } from 'lucide-react'
 import { toast } from 'sonner'
 
 const KeyFrameCreation = () => {
@@ -81,7 +81,7 @@ const KeyFrameCreation = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Crop className="h-5 w-5" />
+            <span className="text-lg">✂️</span>
             Crop Asset
           </CardTitle>
           <CardDescription>
@@ -109,7 +109,7 @@ const KeyFrameCreation = () => {
                   onClick={handleGenerateImage}
                   className="w-full"
                 >
-                  <Crop className="h-4 w-4 mr-2" />
+                  <span className="mr-2">✂️</span>
                   Crop & Continue
                 </Button>
               </>
@@ -156,7 +156,7 @@ const KeyFrameCreation = () => {
                   onClick={handleConfirmImage}
                   className="w-full"
                 >
-                  <Check className="h-4 w-4 mr-2" />
+                  <CheckCircle className="h-4 w-4 mr-2" />
                   Confirm & Continue
                 </Button>
               </>
@@ -175,7 +175,7 @@ const KeyFrameCreation = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Check className="h-5 w-5" />
+            <CheckCircle className="h-5 w-5" />
             Confirm Key Frame
           </CardTitle>
           <CardDescription>
@@ -199,7 +199,7 @@ const KeyFrameCreation = () => {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-2 right-2 bg-green-500/80 text-white rounded-full p-1">
-                    <Check className="h-3 w-3" />
+                    <CheckCircle className="h-3 w-3" />
                   </div>
                 </div>
                 <Button 
@@ -217,7 +217,7 @@ const KeyFrameCreation = () => {
               </>
             ) : (
               <div className="flex flex-col items-center justify-center h-40 text-center">
-                <Check className="h-10 w-10 opacity-50 mb-2" />
+                <CheckCircle className="h-10 w-10 opacity-50 mb-2" />
                 <p className="text-sm opacity-70">No confirmed key frame</p>
                 <p className="text-xs opacity-50 mt-1">Generate and confirm an image first</p>
               </div>

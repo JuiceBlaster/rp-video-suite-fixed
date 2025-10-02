@@ -22,8 +22,6 @@ import {
   Film,
   Wand2,
   Eye,
-  AspectRatio,
-  Crop,
 } from 'lucide-react'
 
 function App() {
@@ -111,7 +109,7 @@ function App() {
           id="aspectRatio"
           title="Project Aspect Ratio"
           subtitle="Set the aspect ratio for your project"
-          icon={<AspectRatio size={18} />}
+          icon={<span className="text-lg">⊡</span>}
           expanded={expandedModules.aspectRatio || false}
           onToggle={() => toggleModule('aspectRatio')}
           disabled={!state.currentProject}
@@ -124,7 +122,7 @@ function App() {
           id="keyFrameCreation"
           title="Key Frame Creation"
           subtitle="Create key frames from your assets"
-          icon={<Crop size={18} />}
+          icon={<span className="text-lg">✂️</span>}
           expanded={expandedModules.keyFrameCreation || false}
           onToggle={() => toggleModule('keyFrameCreation')}
           disabled={!state.currentProject}
