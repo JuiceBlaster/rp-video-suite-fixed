@@ -1,0 +1,104 @@
+/* Custom color definitions for RP Video Suite */
+:root {
+  /* Primary colors */
+  --black: #000000;
+  --green: #10B981;
+  --white: #FFFFFF;
+  
+  /* Neutral colors */
+  --neutral-900: #171717;
+  --neutral-800: #262626;
+  --neutral-700: #404040;
+  --neutral-500: #737373;
+  --neutral-400: #a3a3a3;
+  
+  /* Functional colors */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --info: #3B82F6;
+  
+  /* Button colors - Updated to use green */
+  --btn-primary-bg: var(--green);
+  --btn-primary-text: var(--white);
+  --btn-secondary-bg: transparent;
+  --btn-secondary-border: var(--green);
+  --btn-secondary-text: var(--green);
+}
+
+/* Button styles */
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: none;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+}
+
+.btn-primary:active {
+  filter: brightness(0.9);
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary-bg);
+  border: 1px solid var(--btn-secondary-border);
+  color: var(--btn-secondary-text);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+/* Glass effect utilities */
+.glass {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--neutral-800);
+}
+
+.glass-sm {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--neutral-800);
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--green);
+}
+
+.text-secondary {
+  color: var(--neutral-400);
+}
+
+/* Border colors */
+.border-primary {
+  border-color: var(--green);
+}
+
+/* Background colors */
+.bg-primary {
+  background-color: var(--green);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-neutral-900 {
+  background-color: var(--neutral-900);
+}
+
+.bg-neutral-800 {
+  background-color: var(--neutral-800);
+}

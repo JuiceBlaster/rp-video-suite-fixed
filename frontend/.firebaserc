@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "your-project-id"
+  },
+  "targets": {
+    "your-project-id": {
+      "hosting": {
+        "rp-video-suite": [
+          "your-project-id"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
